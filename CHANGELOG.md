@@ -6,8 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- Changelog: The beginnings
 - Tests
 
-## 0.0.1 - 2014-05-31
+## 0.0.1 - 2018-04-19
 ### Added
+- Changelog: The beginnings
+- Readme
+- Gitignore
