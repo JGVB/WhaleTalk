@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16AEB1F3D0D28EFCD04883A0 /* Pods_WhaleTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F8D7EEF6A8D5D965D9F31C /* Pods_WhaleTalk.framework */; };
 		1D50EDCC208A87E000ECC6C1 /* WhaleTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50EDCB208A87E000ECC6C1 /* WhaleTalkTests.swift */; };
+		D25072FB208B7DC80080EB59 /* Pods_WhaleTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25072FC208B7DC80080EB59 /* Pods_WhaleTalk.framework */; };
 		D2A8D6CB2089830B001491EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CA2089830B001491EA /* AppDelegate.swift */; };
 		D2A8D6CD2089830B001491EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CC2089830B001491EA /* ViewController.swift */; };
 		D2A8D6D02089830B001491EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A8D6CE2089830B001491EA /* Main.storyboard */; };
@@ -32,6 +32,7 @@
 		1D50EDCB208A87E000ECC6C1 /* WhaleTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleTalkTests.swift; sourceTree = "<group>"; };
 		1D50EDCD208A87E000ECC6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39F8D7EEF6A8D5D965D9F31C /* Pods_WhaleTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25072FC208B7DC80080EB59 /* Pods_WhaleTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WhaleTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8D6C72089830B001491EA /* WhaleTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8D6CA2089830B001491EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2A8D6CC2089830B001491EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +40,7 @@
 		D2A8D6D12089830B001491EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2A8D6D42089830B001491EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A8D6D62089830B001491EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2BB2E86208B7CD30065C102 /* Pods_WhaleTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WhaleTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52635FB3CC50270425683B4 /* Pods-WhaleTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTalk/Pods-WhaleTalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16AEB1F3D0D28EFCD04883A0 /* Pods_WhaleTalk.framework in Frameworks */,
+				D25072FB208B7DC80080EB59 /* Pods_WhaleTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +66,8 @@
 		012B6758A4048C1482580E48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D25072FC208B7DC80080EB59 /* Pods_WhaleTalk.framework */,
+				D2BB2E86208B7CD30065C102 /* Pods_WhaleTalk.framework */,
 				39F8D7EEF6A8D5D965D9F31C /* Pods_WhaleTalk.framework */,
 			);
 			name = Frameworks;
@@ -269,10 +273,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WhaleTalk/Pods-WhaleTalk-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -409,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -460,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -476,6 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GY5S75A66;
 				INFOPLIST_FILE = WhaleTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bevtech.WhaleTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,6 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GY5S75A66;
 				INFOPLIST_FILE = WhaleTalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bevtech.WhaleTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
