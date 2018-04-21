@@ -6,7 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
--Sound translation framework
+- Swiftlint
+- ReactiveCocoa
+- Framework to convert human audio to Whale
+- Whale app icon
+- Whale splash
+
 
 ## 0.0.2 - 2018-04-20
 ### Added

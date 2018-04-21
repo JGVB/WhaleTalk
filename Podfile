@@ -10,5 +10,5 @@ inhibit_all_warnings!
 target 'WhaleTalk' do
 
     pod 'IGListKit', '~> 3.0'
-
+    pod 'SwiftLint'
 end

@@ -158,7 +158,7 @@
 				D2A8D6C42089830B001491EA /* Frameworks */,
 				D2A8D6C52089830B001491EA /* Resources */,
 				E86DD07F0F0A01AE114F6A9C /* [CP] Embed Pods Frameworks */,
-				513EF949B99577731E604CDE /* [CP] Copy Pods Resources */,
+				D2BB2E84208B71460065C102 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -248,20 +248,18 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		513EF949B99577731E604CDE /* [CP] Copy Pods Resources */ = {
+		D2BB2E84208B71460065C102 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleTalk/Pods-WhaleTalk-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellPath = "/bin/sh -ex";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		E86DD07F0F0A01AE114F6A9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

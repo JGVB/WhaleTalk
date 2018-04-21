@@ -1,0 +1,41 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+
+whitelist_rules:
+  - closing_brace
+  - colon
+  - comma
+  - custom_rules
+  - empty_parentheses_with_trailing_closure
+  - leading_whitespace
+  - legacy_constant
+  - legacy_constructor
+  - opening_brace
+  - return_arrow_whitespace
+  - syntactic_sugar
+  - trailing_newline
+  - trailing_semicolon
+  - void_return
+  - weak_delegate
+
+custom_rules:
+  english_spelling: # rule identifier
+    name: "English Spelling" # rule name. optional.
+    regex: "(?i)(colour)|(favourite)" # matching pattern
+    message: "Please use the correct english spelling. James 👀" # violation message. optional.
+    severity: error # violation severity. optional.
+    match_kinds:
+      - "number"
+      - "string_interpolation_anchor"
+      - "identifier"
+      - "parameter"
+      - "placeholder"
+      - "argument"
+      - "keyword"
+      - "buildconfig.id"
+      - "objectliteral"
+      - "string"
+      - "attribute.id"
+      - "buildconfig.keyword"
+      - "typeidentifier"
+      - "attribute.builtin"
