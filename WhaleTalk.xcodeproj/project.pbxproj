@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D50EDCC208A87E000ECC6C1 /* WhaleTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50EDCB208A87E000ECC6C1 /* WhaleTalkTests.swift */; };
-		D25072FB208B7DC80080EB59 /* Pods_WhaleTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25072FC208B7DC80080EB59 /* Pods_WhaleTalk.framework */; };
+		D21AE075208CE1500034EC7E /* Whalify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21AE072208CE10A0034EC7E /* Whalify.framework */; };
+		D21AE076208CE1500034EC7E /* Whalify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D21AE072208CE10A0034EC7E /* Whalify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D2A8D6CB2089830B001491EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CA2089830B001491EA /* AppDelegate.swift */; };
 		D2A8D6CD2089830B001491EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CC2089830B001491EA /* ViewController.swift */; };
 		D2A8D6D02089830B001491EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A8D6CE2089830B001491EA /* Main.storyboard */; };
@@ -24,7 +25,42 @@
 			remoteGlobalIDString = D2A8D6C62089830B001491EA;
 			remoteInfo = WhaleTalk;
 		};
+		D21AE071208CE10A0034EC7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D234CC07208CDE1E00BDC53F;
+			remoteInfo = Whalify;
+		};
+		D21AE073208CE10A0034EC7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D234CC10208CDE1E00BDC53F;
+			remoteInfo = WhalifyTests;
+		};
+		D21AE077208CE1500034EC7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D234CC06208CDE1E00BDC53F;
+			remoteInfo = Whalify;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D234CC26208CDF6500BDC53F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D21AE076208CE1500034EC7E /* Whalify.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D93B6EFB651943D42776FD8 /* Pods-WhaleTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTalk/Pods-WhaleTalk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -32,6 +68,7 @@
 		1D50EDCB208A87E000ECC6C1 /* WhaleTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleTalkTests.swift; sourceTree = "<group>"; };
 		1D50EDCD208A87E000ECC6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39F8D7EEF6A8D5D965D9F31C /* Pods_WhaleTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Whalify.xcodeproj; path = ../Whalify/Whalify.xcodeproj; sourceTree = "<group>"; };
 		D25072FC208B7DC80080EB59 /* Pods_WhaleTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WhaleTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8D6C72089830B001491EA /* WhaleTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8D6CA2089830B001491EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D25072FB208B7DC80080EB59 /* Pods_WhaleTalk.framework in Frameworks */,
+				D21AE075208CE1500034EC7E /* Whalify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +128,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D21AE06D208CE10A0034EC7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D21AE072208CE10A0034EC7E /* Whalify.framework */,
+				D21AE074208CE10A0034EC7E /* WhalifyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D2A8D6BE2089830B001491EA = {
 			isa = PBXGroup;
 			children = (
+				D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */,
 				D2A8D6C92089830B001491EA /* WhaleTalk */,
 				1D50EDCA208A87E000ECC6C1 /* WhaleTalkTests */,
 				D2A8D6C82089830B001491EA /* Products */,
@@ -163,10 +210,12 @@
 				D2A8D6C52089830B001491EA /* Resources */,
 				E86DD07F0F0A01AE114F6A9C /* [CP] Embed Pods Frameworks */,
 				D2BB2E84208B71460065C102 /* ShellScript */,
+				D234CC26208CDF6500BDC53F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D21AE078208CE1500034EC7E /* PBXTargetDependency */,
 			);
 			name = WhaleTalk;
 			productName = WhaleTalk;
@@ -205,6 +254,12 @@
 			mainGroup = D2A8D6BE2089830B001491EA;
 			productRefGroup = D2A8D6C82089830B001491EA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D21AE06D208CE10A0034EC7E /* Products */;
+					ProjectRef = D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D2A8D6C62089830B001491EA /* WhaleTalk */,
@@ -212,6 +267,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D21AE072208CE10A0034EC7E /* Whalify.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Whalify.framework;
+			remoteRef = D21AE071208CE10A0034EC7E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D21AE074208CE10A0034EC7E /* WhalifyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WhalifyTests.xctest;
+			remoteRef = D21AE073208CE10A0034EC7E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D50EDC7208A87E000ECC6C1 /* Resources */ = {
@@ -316,6 +388,11 @@
 			isa = PBXTargetDependency;
 			target = D2A8D6C62089830B001491EA /* WhaleTalk */;
 			targetProxy = 1D50EDCE208A87E000ECC6C1 /* PBXContainerItemProxy */;
+		};
+		D21AE078208CE1500034EC7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Whalify;
+			targetProxy = D21AE077208CE1500034EC7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -482,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D93B6EFB651943D42776FD8 /* Pods-WhaleTalk.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GY5S75A66;
@@ -499,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E52635FB3CC50270425683B4 /* Pods-WhaleTalk.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GY5S75A66;
