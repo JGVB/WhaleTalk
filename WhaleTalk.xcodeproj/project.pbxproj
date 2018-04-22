@@ -10,10 +10,9 @@
 		1D50EDCC208A87E000ECC6C1 /* WhaleTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D50EDCB208A87E000ECC6C1 /* WhaleTalkTests.swift */; };
 		D21AE075208CE1500034EC7E /* Whalify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21AE072208CE10A0034EC7E /* Whalify.framework */; };
 		D21AE076208CE1500034EC7E /* Whalify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D21AE072208CE10A0034EC7E /* Whalify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D25F5590208D07FB00D2DAB4 /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F558F208D07FB00D2DAB4 /* RecordingViewModel.swift */; };
 		D2A8D6CB2089830B001491EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CA2089830B001491EA /* AppDelegate.swift */; };
-		D2A8D6CD2089830B001491EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CC2089830B001491EA /* ViewController.swift */; };
-		D2A8D6D02089830B001491EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A8D6CE2089830B001491EA /* Main.storyboard */; };
-		D2A8D6D22089830B001491EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A8D6D12089830B001491EA /* Assets.xcassets */; };
+		D2A8D6CD2089830B001491EA /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CC2089830B001491EA /* RecordView.swift */; };
 		D2A8D6D52089830B001491EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A8D6D32089830B001491EA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -70,11 +69,10 @@
 		39F8D7EEF6A8D5D965D9F31C /* Pods_WhaleTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Whalify.xcodeproj; path = ../Whalify/Whalify.xcodeproj; sourceTree = "<group>"; };
 		D25072FC208B7DC80080EB59 /* Pods_WhaleTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WhaleTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25F558F208D07FB00D2DAB4 /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
 		D2A8D6C72089830B001491EA /* WhaleTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8D6CA2089830B001491EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2A8D6CC2089830B001491EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2A8D6CF2089830B001491EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D2A8D6D12089830B001491EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A8D6CC2089830B001491EA /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		D2A8D6D42089830B001491EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A8D6D62089830B001491EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2BB2E86208B7CD30065C102 /* Pods_WhaleTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WhaleTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +135,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D25F558D208D07C200D2DAB4 /* RecordingSound */ = {
+			isa = PBXGroup;
+			children = (
+				D25F558F208D07FB00D2DAB4 /* RecordingViewModel.swift */,
+				D2A8D6CC2089830B001491EA /* RecordView.swift */,
+			);
+			path = RecordingSound;
+			sourceTree = "<group>";
+		};
+		D25F558E208D07E500D2DAB4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D25F558D208D07C200D2DAB4 /* RecordingSound */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		D2A8D6BE2089830B001491EA = {
 			isa = PBXGroup;
 			children = (
@@ -161,22 +176,12 @@
 		D2A8D6C92089830B001491EA /* WhaleTalk */ = {
 			isa = PBXGroup;
 			children = (
-				D2A8D6DC20898E16001491EA /* Resources */,
 				D2A8D6CA2089830B001491EA /* AppDelegate.swift */,
-				D2A8D6CC2089830B001491EA /* ViewController.swift */,
-				D2A8D6CE2089830B001491EA /* Main.storyboard */,
-				D2A8D6D12089830B001491EA /* Assets.xcassets */,
 				D2A8D6D32089830B001491EA /* LaunchScreen.storyboard */,
 				D2A8D6D62089830B001491EA /* Info.plist */,
+				D25F558E208D07E500D2DAB4 /* Classes */,
 			);
 			path = WhaleTalk;
-			sourceTree = "<group>";
-		};
-		D2A8D6DC20898E16001491EA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A8D6D52089830B001491EA /* LaunchScreen.storyboard in Resources */,
-				D2A8D6D22089830B001491EA /* Assets.xcassets in Resources */,
-				D2A8D6D02089830B001491EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +379,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A8D6CD2089830B001491EA /* ViewController.swift in Sources */,
+				D2A8D6CD2089830B001491EA /* RecordView.swift in Sources */,
+				D25F5590208D07FB00D2DAB4 /* RecordingViewModel.swift in Sources */,
 				D2A8D6CB2089830B001491EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,14 +401,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D2A8D6CE2089830B001491EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2A8D6CF2089830B001491EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2A8D6D32089830B001491EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
