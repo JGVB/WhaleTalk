@@ -10,16 +10,16 @@ import UIKit
 import AVFoundation
 import ReactiveSwift
 import ReactiveCocoa
+import BevtechCore
 
 final class RecordView: UIViewController {
 
-    // MARK: Propertie
+    // MARK: Properties
 
     private let vm = RecordingViewModel()
 
     private let recordButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setTitle("Tap to record", for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 16)
         button.setTitleColor(.white, for: .normal)
         return button
@@ -58,6 +58,8 @@ final class RecordView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        recordButton.addTarget(self, action: #selector(didTapRecord), for: .touchUpInside)
+
         bindViewModel()
     }
 
@@ -71,7 +73,9 @@ final class RecordView: UIViewController {
 
         alertTextLabel.frame = layoutFrame
         alertTextLabel.frame.origin.y = recordButton.frame.maxY + 20
-//        alertTextLabel.frame.size.height = alertTextLabel
+        alertTextLabel.frame.size.height = alertTextLabel
+            .attributedText?
+            .height(withConstrainedWidth: alertTextLabel.bounds.width) ?? 0
     }
 
     // MARK: Binding
@@ -80,6 +84,18 @@ final class RecordView: UIViewController {
         alertTextLabel.reactive.isHidden <~ vm.isAlertLabelHidden
         alertTextLabel.reactive.textColor <~ vm.alertLabelTextRGB
             .map { UIColor(red: $0.0, green: $0.1, blue: $0.2, alpha: 1) }
+        alertTextLabel.reactive.text <~ vm.alertText
+        recordButton.reactive.title <~ vm.recordButtonText
 
+        vm.recordButtonTextRGB.signal
+                .observeValues { [unowned self] r, g, b in
+                self.recordButton.setTitleColor(UIColor(red: r, green: g, blue: b, alpha: 1), for: .normal)
+        }
+    }
+
+    // MARK: Actions
+
+    @objc private func didTapRecord() {
+        vm.didTapRecord()
     }
 }
