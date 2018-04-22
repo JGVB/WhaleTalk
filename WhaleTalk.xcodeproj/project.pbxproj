@@ -11,6 +11,8 @@
 		D21AE075208CE1500034EC7E /* Whalify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21AE072208CE10A0034EC7E /* Whalify.framework */; };
 		D21AE076208CE1500034EC7E /* Whalify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D21AE072208CE10A0034EC7E /* Whalify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D25F5590208D07FB00D2DAB4 /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F558F208D07FB00D2DAB4 /* RecordingViewModel.swift */; };
+		D25F55EB208D108700D2DAB4 /* BevtechCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25F55E8208D107600D2DAB4 /* BevtechCore.framework */; };
+		D25F55EC208D108700D2DAB4 /* BevtechCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25F55E8208D107600D2DAB4 /* BevtechCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D2A8D6CB2089830B001491EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CA2089830B001491EA /* AppDelegate.swift */; };
 		D2A8D6CD2089830B001491EA /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CC2089830B001491EA /* RecordView.swift */; };
 		D2A8D6D52089830B001491EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A8D6D32089830B001491EA /* LaunchScreen.storyboard */; };
@@ -45,6 +47,27 @@
 			remoteGlobalIDString = D234CC06208CDE1E00BDC53F;
 			remoteInfo = Whalify;
 		};
+		D25F55E7208D107600D2DAB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25F55E2208D107600D2DAB4 /* BevtechCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D25F55C8208D104700D2DAB4;
+			remoteInfo = BevtechCore;
+		};
+		D25F55E9208D107600D2DAB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25F55E2208D107600D2DAB4 /* BevtechCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D25F55D1208D104700D2DAB4;
+			remoteInfo = BevtechCoreTests;
+		};
+		D25F55ED208D108700D2DAB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25F55E2208D107600D2DAB4 /* BevtechCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D25F55C7208D104700D2DAB4;
+			remoteInfo = BevtechCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +78,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D21AE076208CE1500034EC7E /* Whalify.framework in Embed Frameworks */,
+				D25F55EC208D108700D2DAB4 /* BevtechCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +94,7 @@
 		D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Whalify.xcodeproj; path = ../Whalify/Whalify.xcodeproj; sourceTree = "<group>"; };
 		D25072FC208B7DC80080EB59 /* Pods_WhaleTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_WhaleTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25F558F208D07FB00D2DAB4 /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
+		D25F55E2208D107600D2DAB4 /* BevtechCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BevtechCore.xcodeproj; path = ../BevtechCore/BevtechCore.xcodeproj; sourceTree = "<group>"; };
 		D2A8D6C72089830B001491EA /* WhaleTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8D6CA2089830B001491EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2A8D6CC2089830B001491EA /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
@@ -92,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D21AE075208CE1500034EC7E /* Whalify.framework in Frameworks */,
+				D25F55EB208D108700D2DAB4 /* BevtechCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +178,19 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		D25F55E3208D107600D2DAB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25F55E8208D107600D2DAB4 /* BevtechCore.framework */,
+				D25F55EA208D107600D2DAB4 /* BevtechCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D2A8D6BE2089830B001491EA = {
 			isa = PBXGroup;
 			children = (
+				D25F55E2208D107600D2DAB4 /* BevtechCore.xcodeproj */,
 				D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */,
 				D2A8D6C92089830B001491EA /* WhaleTalk */,
 				1D50EDCA208A87E000ECC6C1 /* WhaleTalkTests */,
@@ -221,6 +257,7 @@
 			);
 			dependencies = (
 				D21AE078208CE1500034EC7E /* PBXTargetDependency */,
+				D25F55EE208D108700D2DAB4 /* PBXTargetDependency */,
 			);
 			name = WhaleTalk;
 			productName = WhaleTalk;
@@ -261,6 +298,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = D25F55E3208D107600D2DAB4 /* Products */;
+					ProjectRef = D25F55E2208D107600D2DAB4 /* BevtechCore.xcodeproj */;
+				},
+				{
 					ProductGroup = D21AE06D208CE10A0034EC7E /* Products */;
 					ProjectRef = D21AE06C208CE10A0034EC7E /* Whalify.xcodeproj */;
 				},
@@ -286,6 +327,20 @@
 			fileType = wrapper.cfbundle;
 			path = WhalifyTests.xctest;
 			remoteRef = D21AE073208CE10A0034EC7E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D25F55E8208D107600D2DAB4 /* BevtechCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BevtechCore.framework;
+			remoteRef = D25F55E7208D107600D2DAB4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D25F55EA208D107600D2DAB4 /* BevtechCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BevtechCoreTests.xctest;
+			remoteRef = D25F55E9208D107600D2DAB4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -397,6 +452,11 @@
 			isa = PBXTargetDependency;
 			name = Whalify;
 			targetProxy = D21AE077208CE1500034EC7E /* PBXContainerItemProxy */;
+		};
+		D25F55EE208D108700D2DAB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BevtechCore;
+			targetProxy = D25F55ED208D108700D2DAB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
