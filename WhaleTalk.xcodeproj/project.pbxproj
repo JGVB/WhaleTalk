@@ -16,6 +16,7 @@
 		D2A8D6CB2089830B001491EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CA2089830B001491EA /* AppDelegate.swift */; };
 		D2A8D6CD2089830B001491EA /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8D6CC2089830B001491EA /* RecordView.swift */; };
 		D2A8D6D52089830B001491EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A8D6D32089830B001491EA /* LaunchScreen.storyboard */; };
+		FA4D18E54E6961C853E55B8E /* Pods_WhaleTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25072FC208B7DC80080EB59 /* Pods_WhaleTalk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 			files = (
 				D21AE075208CE1500034EC7E /* Whalify.framework in Frameworks */,
 				D25F55EB208D108700D2DAB4 /* BevtechCore.framework in Frameworks */,
+				FA4D18E54E6961C853E55B8E /* Pods_WhaleTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,12 +554,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SRCROOT)/** $(PROJECT_DIR)/build/Debug-iphoneos";
 			};
 			name = Debug;
 		};
@@ -603,10 +606,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SRCROOT)/** $(PROJECT_DIR)/build/Debug-iphoneos";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -620,7 +624,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GY5S75A66;
 				INFOPLIST_FILE = WhaleTalk/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bevtech.WhaleTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -638,7 +642,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GY5S75A66;
 				INFOPLIST_FILE = WhaleTalk/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bevtech.WhaleTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
