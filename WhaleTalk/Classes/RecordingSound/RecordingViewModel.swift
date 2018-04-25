@@ -11,6 +11,7 @@ import AVFoundation
 import ReactiveSwift
 import ReactiveCocoa
 import Result
+import Whalify
 
 final class RecordingViewModel: NSObject {
 
@@ -113,6 +114,6 @@ final class RecordingViewModel: NSObject {
 
 extension RecordingViewModel: AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-
+        Whalify.changePitchOf(sound: RecordingViewModel.getToTranslateWhaleURL())
     }
 }
